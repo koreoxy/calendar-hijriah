@@ -9,9 +9,9 @@ export const Footer = () => {
   return (
     <footer className="border-t p-10">
       <div className="mx-auto w-full max-w-3xl spacey-20">
-        <div className="flex flex-row justify-between">
-          <div className="font-bold text-3xl">Seulayan</div>
-          <div className="flex flex-row gap-16">
+        <div className="flex flex-col sm:flex-row items-center justify-between">
+          <div className="font-bold text-3xl font-pacifico">Seulayan</div>
+          <div className="mt-5 sm:mt-0 flex flex-row gap-16">
             <div className="flex flex-col">
               <h1 className="font-bold text-lg">Links</h1>
               <Link
@@ -63,7 +63,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border-t mt-2">
+        <div className="border-t mt-10">
           <p className="text-center mt-1 text-sm">
             &copy; Copyright 2024. Seulayan
           </p>
