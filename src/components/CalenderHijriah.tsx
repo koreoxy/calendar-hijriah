@@ -1,13 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Calendar } from "@/components/ui/calendar";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Link } from "react-router-dom";
 
 export const CalenderHijriah = () => {
@@ -46,7 +40,7 @@ export const CalenderHijriah = () => {
       try {
         const response = await axios.request(options);
         setData(response.data);
-      } catch (error) {
+      } catch (error: any) {
         setError(error.message);
       }
     };
