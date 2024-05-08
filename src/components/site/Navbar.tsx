@@ -104,7 +104,7 @@ export const Navbar: React.FC = () => {
               <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-t border-gray-200">
                 <div className="flex flex-col space-y-2 px-4 py-2">
                   <Link
-                    to="/beranda"
+                    to="/"
                     className={`block p-2 ${
                       isPageActive("/beranda")
                         ? "text-[#ff0000]"

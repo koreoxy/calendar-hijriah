@@ -82,23 +82,10 @@ export const CalenderHijriah = () => {
                   <p>{data[0].puasanya || "Tidak ada Puasa"} </p>
                 </Card>
                 <div>
-                  <Link
-                    to="/details-calender"
-                    className="underline underline-offset-2"
-                  >
+                  <Link to="/sejarah" className="underline underline-offset-2">
                     See details
                   </Link>
                 </div>
-                {/* <p>hari: {data[0].hari}</p>
-              <p>tanggal hijriyah: {data[0].tanggal_hijriyah}</p>
-              <p>bulan hijriyah: {data[0].bulan_hijriyah}</p>
-              <p>tahun hijriyah: {data[0].tahun_hijriyah}</p>
-              <p>tanggal masehi: {data[0].tanggal_masehi}</p>
-              <p>bulan masehi: {data[0].bulan_masehi}</p>
-              <p>tahun masehi: {data[0].tahun_masehi}</p>
-              <p>acaranya: {data[0].acaranya}</p>
-              <p>Puasanya: {data[0].puasanya}</p>
-              <p>Puasanya2: {data[0].puasanya2}</p> */}
               </div>
             ) : (
               <div className="text-center font-bold my-10">

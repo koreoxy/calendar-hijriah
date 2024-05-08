@@ -152,7 +152,10 @@ export const Sejarah = () => {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center max-w-3xl mx-auto mt-10 mb-20">
+      <section
+        className="flex flex-col items-center max-w-3xl mx-auto mt-10 mb-20"
+        id="calender"
+      >
         <h1 className="font-bold text-2xl text-center">Kalender</h1>
         <Card className="flex flex-col mx-auto gap-5 p-0 sm:p-2 md:p-5 mt-2">
           <Card className="w-full h-full py-4 px-2 sm:px-3 md:py-0 md:p-5">

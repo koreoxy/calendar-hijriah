@@ -1,10 +1,12 @@
 import { CalenderHijriah } from "@/components/CalenderHijriah";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { NavHashLink } from "react-router-hash-link";
 
 export const Beranda = () => {
   return (
@@ -61,8 +63,14 @@ export const Beranda = () => {
         </div>
       </section>
 
-      <section className="mb-16">
+      <section className="mb-10">
         <CalenderHijriah />
+      </section>
+
+      <section className="text-center max-w-3xl mx-auto mb-16">
+        <NavHashLink to="/sejarah#calender">
+          <Button>Kalender Islami</Button>
+        </NavHashLink>
       </section>
     </div>
   );
