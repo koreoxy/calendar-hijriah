@@ -74,9 +74,9 @@ export const Sejarah = () => {
   const [today, setToday] = useState(currentDate);
   const [selectDate, setSelectDate] = useState(currentDate);
   const [hijriDate, setHijriDate] = useState<HijriData | null>(null);
-  const [gregorianDate, setGregorianDate] = useState<GregorianData | null>(
-    null
-  );
+  // const [gregorianDate, setGregorianDate] = useState<GregorianData | null>(
+  //   null
+  // );
   const [additionalApiData, setAdditionalApiData] = useState<any>(null);
   console.log(additionalApiData);
 
@@ -90,7 +90,7 @@ export const Sejarah = () => {
         );
         const data: ApiResponse = await response.json();
         setHijriDate(data.data.hijri);
-        setGregorianDate(data.data.gregorian);
+        // setGregorianDate(data.data.gregorian);
         setIsLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
