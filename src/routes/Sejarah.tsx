@@ -86,7 +86,7 @@ export const Sejarah = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://api.aladhan.com/v1/gToH/${selectDate.format("DD-MM-YYYY")}`
+          `https://api.aladhan.com/v1/gToH/${selectDate.format("DD-MM-YYYY")}`
         );
         const data: ApiResponse = await response.json();
         setHijriDate(data.data.hijri);
