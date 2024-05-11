@@ -1,20 +1,8 @@
 import { Github, Twitter, Youtube } from "lucide-react";
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 
 export const Navbar: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const location = useLocation();
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const isPageActive = (pathname: string) => {
-    return location.pathname === pathname;
-  };
-
   return (
     <header className="w-full sticky top-0 z-50 border-b bg-white">
       <div className="flex h-16 items-center px-10 sm:px-16 lg:px-44">
