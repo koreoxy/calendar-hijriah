@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const NotFound = () => {
   return (
     <div className="px-4 py-10 text-center sm:px-6 lg:px-8">
@@ -9,6 +11,9 @@ export const NotFound = () => {
         Uh oh! <br />
         The page you regueste wast not found
       </p>
+      <Link to="/" className="hover:text-red-600">
+        Back Home
+      </Link>
     </div>
   );
 };

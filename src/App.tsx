@@ -1,10 +1,7 @@
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
-import { Beranda } from "./routes/Beranda";
-import { Sejarah } from "./routes/Sejarah";
-import { Tim } from "./routes/Tim";
-import { FAQ } from "./routes/FAQ";
 import { NotFound } from "./routes/NotFound";
 import { Layout } from "./components/site/Layout";
+import { CalenderHijriahPage } from "./routes/CalenderHijriahPage";
 
 export default function App() {
   return (
@@ -25,10 +22,7 @@ export function AppRoutes() {
           </Layout>
         }
       >
-        <Route index={true} element={<Beranda />} />
-        <Route path="sejarah" element={<Sejarah />} />
-        <Route path="tim" element={<Tim />} />
-        <Route path="faq" element={<FAQ />} />
+        <Route index={true} element={<CalenderHijriahPage />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
