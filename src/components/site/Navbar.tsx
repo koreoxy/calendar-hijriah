@@ -9,8 +9,8 @@ export const Navbar: React.FC = () => {
         <div className="mx-auto w-full max-w-3xl spacey-20">
           <nav className="flex justify-between">
             <div className="flex flex-1 items-center justify-start">
-              <Link to="/" className="font-bold text-2xl font-pacifico">
-                Calender-Hijriah
+              <Link to="/" className="font-bold text-xl font-pacifico">
+                Calendar-Hijriah
               </Link>
             </div>
 
